@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài tập Box Model</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <main class="profile-card">
+    <header class="card-header">
+      <h2>Đăng ký tham gia</h2>
+      <p>Vui lòng điền thông tin của bạn dưới đây</p>
+    </header>
+    
+    <form class="card-body" action="#" method="POST">
+      <div class="form-group">
+        <label for="fullname">Họ và tên</label>
+        <input type="text" id="fullname" name="fullname" class="input-field" placeholder="VD: Nguyễn Văn A" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Địa chỉ Email</label>
+        <input type="email" id="email" name="email" class="input-field" placeholder="name@example.com" required>
+      </div>
+
+      <button type="submit" class="btn-submit">Hoàn tất đăng ký</button>
+    </form>
+  </main>
+
+
+
+  <section class="version-px">
+   <div><h3>Ghi chú</h3></div>
+   <div class="versionpx">
+
+    <div> 
+    <ul class="content">
+      <li>1kg gạo</li>
+      <li>1kg thịt</li>
+      <li>1kg rau</li>
+    </ul>
+    </div>
+
+    <div>
+      <ul class="content">
+        <li>15 thiệp mời</li>
+        <li>5 bàn ăn</li>
+        <li>12 lễ phục</li>
+      </ul>
+    </div>
+   
+   <div>
+    <ul class="content">
+      <li>4 cây kéo </li>
+      <li>1 gỗ chày</li>
+      <li>5 cây que</li>
+    </ul>
+   </div>
+  </div>
+  </section>
+
+
+<section class="version-rem">
+   <div><h3>Ghi chú</h3></div>
+   <div class="versionrem">
+
+    <div> 
+    <ul class="contentrem">
+      <li>1kg gạo</li>
+      <li>1kg thịt</li>
+      <li>1kg rau</li>
+    </ul>
+    </div>
+
+    <div>
+      <ul class="contentrem">
+        <li>15 thiệp mời</li>
+        <li>5 bàn ăn</li>
+        <li>12 lễ phục</li>
+      </ul>
+    </div>
+   
+   <div>
+    <ul class="contentrem">
+      <li>4 cây kéo </li>
+      <li>1 gỗ chày</li>
+      <li>5 cây que</li>
+    </ul>
+   </div>
+  </div>
+  </section>
+
+
+<!--Sự khác biệt giữa đơn vị px và rem:
+1. Về bản chất tính toán: px (Pixel) là đơn vị tuyệt đối (kích thước cố định theo điểm ảnh màn hình), còn rem (Root EM) là đơn vị tương đối (tính theo tỷ lệ với cỡ chữ gốc của thẻ <html>, mặc định 1rem = 16px).
+2. Về khả năng co giãn theo cài đặt trình duyệt: Khi giữ cài đặt mặc định, cả hai hiển thị giống hệt nhau. Tuy nhiên, khi người dùng thay đổi cỡ chữ mặc định trong phần Cài đặt của trình duyệt (ví dụ chuyển sang Rất lớn), phiên bản dùng px giữ nguyên kích thước cố định, trong khi phiên bản dùng rem tự động phóng to (hoặc thu nhỏ) đồng bộ cả cỡ chữ lẫn khung giao diện.
+-->
+
+</body>
+</html>
