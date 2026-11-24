@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f4f6f8;
+      font-family: sans-serif;
+    }
+
+    .layout {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      width: 90%;
+      max-width: 1000px;
+    }
+
+    .card {
+      flex: 1 1 200px;
+      height: 140px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #1e293b;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="layout">
+    <div class="card">HTML</div>
+    <div class="card">CSS</div>
+    <div class="card">JS</div>
+    <div class="card">React</div>
+  </div>
+
+</body>
+</html>
